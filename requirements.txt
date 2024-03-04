@@ -2,9 +2,8 @@ pandas
 numpy
 seaborn
 pillow
-xgboost
-matplotlib
 scikit-learn
 catboost
+xgboost
 
 #-e .
