@@ -1,4 +1,4 @@
-import logging
+from src.logger import logging
 import sys
 
 
@@ -18,3 +18,11 @@ class CustomException(Exception):
 
     def __str__(self):
         return self._error_message
+
+if __name__ == "__main__":
+    try:
+       a = 1/0
+    except Exception as e:
+        #logging the exception with detailed information of where it happened and what was the error
+        logging.info("divide by zero")
+        raise CustomException(e,sys)
